@@ -1,0 +1,6 @@
+#! /usr/bin/env perl
+$pdflatex  = 'pdflatex -interaction=nonstopmode %O %S';
+$bibtex = 'bibtex' ;
+$pdf_previewer = 'open %O %S';
+$pdf_mode = 1;
+$pdf_update_method = 0;

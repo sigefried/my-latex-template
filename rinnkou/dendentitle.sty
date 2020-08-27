@@ -1,0 +1,46 @@
+%   ver1.0: 26 Apr 1991 by shisei
+%    usage: \makedendentitle{}{
+%   \maketitle
+% jarticle.sty
+
+\topmargin 0.3in
+\textheight=25cm
+\def\makedendentitle#1#2{\par
+\begingroup
+\if@twocolumn
+\twocolumn[\@dendentitle{#1}{#2}]
+\else \newpage
+\global\@topnum\z@ \@dendentitle{#1}{#2} \fi\@thanks
+\endgroup
+\let\makedendentitle\relax
+\let\@dendentitle\relax
+\gdef\@thanks{}\gdef\@author{}\gdef\@title{}\let\thanks\relax}
+
+
+\vskip -2cm
+\def\@dendentitle#1#2{\newpage
+\null
+%\vskip 2em
+\newlength \dendenwidth
+\dendenwidth = -2ex
+\advance \dendenwidth by \textwidth
+\begin{center}
+\framebox[\textwidth]{
+   \parbox{\dendenwidth}
+     {
+       \vskip .5ex
+       #1 \hfill \@date \\
+         \parbox{\dendenwidth}{
+           \vskip 1em
+           \centering {\Large \gt \bf \@title \par}
+           \vskip 1em
+         }
+       \vskip 0ex
+       #2 \hfill \@author
+       \vskip .5ex
+     }
+}
+\end{center}
+% \vskip 3em
+\vskip 1em
+}

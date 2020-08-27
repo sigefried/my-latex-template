@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\pdfminorversion=4
+\documentclass[mathserif,serif]{beamer}
+
+\mode<presentation> {
+
+\usetheme{CambridgeUS}
+\usecolortheme{dolphin}
+
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Lab report]{This is my first report} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Huang YuYang} % Your name
+\institute[U Tokyo] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+The University of Tokyo \\ % Your institution for the title page
+Institute of Industrial Science \\
+Kamijo Lab \\
+\medskip
+\textit{huangyuyang@kmj.iis.u-tokyo.ac.jp} % Your email address
+}
+\date{June 2, 2014} % Date, can be changed to a custom date
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Overview}
+  \tableofcontents
+\end{frame}
+
+\section{first}
+\subsection{firstsub}
+
+\begin{frame}
+  \frametitle{block test}
+  \begin{block}{This is a Block}
+    This is important information
+  \end{block}
+  \begin{alertblock}{This is an Alert block}
+    This is an important block
+  \end{alertblock}
+  \begin{exampleblock}{This is an exampleblock}
+    This is an examble block
+  \end{exampleblock}
+\end{frame}
+
+\section{second}
+
+\begin{frame}
+  \frametitle{block test 2}
+  \begin{Theorem}
+    $E = mc^2 $
+  \end{Theorem}
+\end{frame}
+
+\end{document}

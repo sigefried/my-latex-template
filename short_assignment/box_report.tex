@@ -1,0 +1,57 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amsthm,amssymb,fullpage}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage[usenames]{color}
+\usepackage{fancybox}
+\usepackage[slantfont,boldfont,CJKnumber]{xeCJK}
+\setCJKmainfont{Hiragino Mincho Pro}
+\setCJKsansfont{Hiragino Kaku Gothic Pro}
+\setCJKmonofont{Hiragino Mincho Pro}
+\usepackage[
+  unicode,
+  colorlinks,
+  pdfcreator={TeX},
+  pdfauthor={sigefriedhyy@gmail.com}
+]{hyperref}
+
+\usepackage[sorting=none,
+  backend=bibtex,
+  style=ieee,
+]{biblatex}
+\bibliography{short_bib}
+
+\newcommand{\solution}{\doublebox{\emph{Answer:}} \hspace{1mm}}
+\newcommand{\problem}[1]{\vspace{6mm}\noindent\shadowbox{\parbox{0.9\textwidth}{#1}} \vspace{2mm}}
+\newcommand{\department}{電子情報学専攻 上條研究室}
+\newcommand{\course}{情報セキュリティ基盤論 \\ \emph{教員：佐藤周行先生} }
+\newcommand{\identity}{48-146459  M1  黄宇陽}
+\newcommand{\maintitle}{レポートテーマ2}
+\newcommand{\theday}{2014年6月29日}
+
+%title
+\renewcommand{\maketitle}{%
+\noindent\begin{tabularx}{\linewidth}{|X|}
+  \hline
+  \vspace{1mm}
+  \course \hfill \theday \\
+  \vspace{0.6mm}
+  {\centering \sf \bf \Large \maintitle \\}
+  \vspace{3mm}
+  \department \hfill \identity \vspace{1mm} \\
+  \hline
+\end{tabularx}
+}
+
+\begin{document}
+
+\maketitle
+
+
+%---------------------------------------
+\printbibliography
+
+
+\end{document}

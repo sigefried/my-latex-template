@@ -1,0 +1,34 @@
+% Customize the title
+\renewcommand{\maketitle}{%
+  \begin{center} % Center align
+    {\LARGE\@title} % Increase the font size of the title
+
+    \vspace{50pt} % Some vertical space between the title and author name
+
+    {\large\@author} % Author name
+    \vspace{10pt} \\
+    \@date % Date
+
+    \vspace{40pt} % Some vertical space between the author block and abstract
+  \end{center}
+}
+% Margins
+\topmargin=-0.45in
+\headheight=7mm
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=1cm
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+%fancyhdr
+
+
+
+%abstract
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+

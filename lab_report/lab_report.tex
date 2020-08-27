@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amsthm,amssymb,fullpage}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{mydenjoreport1}
+\usepackage[sorting=none,
+  backend=bibtex,
+  style=ieee,
+]{biblatex}
+\usepackage[usenames]{color}
+\usepackage[slantfont,boldfont,CJKnumber]{xeCJK}
+\setCJKmainfont{Hiragino Mincho Pro}
+\setCJKsansfont{Hiragino Kaku Gothic Pro}
+\setCJKmonofont{Hiragino Mincho Pro}
+
+%title
+\newcommand{\repwkTitle}{Final Report} % Assignment title
+\newcommand{\repwkDate}{July 5, 2014}
+\newcommand{\repwkClass}{映像メディア工学} % Course/class
+\newcommand{\repwkClassInstructor}{教員：山崎　准教授} % Teacher/lecturer
+\newcommand{\repwkAuthorName}{黄宇陽(Huang YuYang)}
+\newcommand{\repwkAuthorId}{ID: 48-146459}
+\newcommand{\repwkAuthor}{\repwkAuthorName \\  \repwkAuthorId}
+\newcommand{\adPerInfo}{東京大学情報理工研究科 \\ 電子情報学専攻 \\ 上條研究室}
+
+
+\title{\textbf{\repwkClass \\ \repwkTitle} \\
+\vspace{2em}
+\textit{\repwkClassInstructor}}
+\author{\textsc{\repwkAuthor} \\
+\textit{\adPerInfo}}
+\date{\repwkDate}
+
+\pagestyle{fancy}
+\lhead{\repwkAuthorName}
+\chead{\repwkClass: Final report}
+\rhead{\repwkClassInstructor}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}}
+
+\linespread{1.1}
+
+\bibliography{lab_bib}
+
+%----------------------------------------------------------------
+% document begin
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+test test\cite{Smith:2012qr}
+
+\printbibliography
+
+
+
+\end{document}

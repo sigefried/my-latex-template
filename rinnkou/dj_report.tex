@@ -1,0 +1,73 @@
+\documentclass[a4j]{jarticle}
+\usepackage{dendentitle}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{mathpazo} %use the palation font
+\usepackage{tabularx}
+\usepackage[usenames]{color}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{lipsum} %dummy code
+
+\usepackage[sorting=none,
+  backend=bibtex,
+  style=ieee,
+]{biblatex}
+\bibliography{dj_bib}
+
+
+% fix the titile
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Tab.}
+
+% set size
+\setlength\paperheight{297mm}
+\setlength\paperwidth{210mm}
+\setlength\textwidth{500pt}
+\setlength\oddsidemargin{\paperwidth}
+\addtolength\oddsidemargin{-\textwidth}
+\setlength\oddsidemargin{.5\oddsidemargin}
+\addtolength\oddsidemargin{-1in}
+\setlength\evensidemargin{\oddsidemargin}
+\setlength\columnsep{25pt}
+
+% adjust page
+\setlength\headheight{0pt}
+\setlength\headsep{0pt}
+\setlength\footskip{30pt}
+\setlength\textheight{50\baselineskip}
+\setlength\topmargin{\paperheight}
+\addtolength\topmargin{-\textheight}
+\setlength\topmargin{.5\topmargin}
+\addtolength\topmargin{-1in}
+\xkanjiskip.2zw plus 1pt minus 1pt
+
+
+
+
+\title{サーベイ発表\\Survey Result}
+\author{修士課程1年{\ }48--146459{\ } 黄　宇陽}
+\date{2014年05月22日}
+
+\begin{document}
+\twocolumn
+\makedendentitle{研究室輪講・2014夏}{上條研究室}
+
+\begin{abstract}
+  this is the abstract section
+\end{abstract}
+
+\section{begin}
+testets\cite{Smith:2012qr}
+
+adsfasdfasdfasdfasdfadsfasdf
+人はいつか
+cabe
+
+\printbibliography
+
+\end{document}
